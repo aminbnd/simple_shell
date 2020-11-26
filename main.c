@@ -9,7 +9,7 @@ int main(void)
 	char **args;
 	int status;
 
-	while(1)
+	while(status)
 	{
 		prompt();
 		line = readline();
