@@ -1,4 +1,5 @@
 # This file lists all individuals having contributed content to the repository.
+# For how it is generated, see `hack/generate-authors.sh`.
 
-khalil hassayoun <2166@holbertonschool.com>
-med amine bondi <2212@holbertonschool.com>
+aminbnd <2212@holbertonschool.com>
+khalil-hassayoun <khalil.hassayoun@hotmail.fr>
