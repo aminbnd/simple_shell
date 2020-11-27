@@ -1,4 +1,4 @@
-			<i><b>simple shell : a linux shell clone</b></i>
+			SIMPLE SHELL : A LINUX SHELL CLONE
 
 				
 
@@ -68,6 +68,26 @@ The unsetenv() built-in deletes the variable name from the environment. If name 
 . unalias [-a] [name]
 
 If name is specified, the shell removes that alias.  If -a is specified, all aliases are removed.
+
+.EXAMPLE 
+
+To run the simple shell, compile all the *.c files using gcc -Wall -Wextra -Werror -pedantc *.c -o hsh
+Then, test a command. for example:
+
+./hsh 
+$ ls -l
+total 64
+-rwxrwxr-x 1 amin amin 9488 nov.  27 11:55 a.out
+-rw-r--r-- 1 amin amin  222 nov.  25 20:24 AUTHORS
+-rw-r--r-- 1 amin amin  410 nov.  25 12:55 header.h
+-rwxrwxr-x 1 amin amin 9216 nov.  27 11:52 hsh
+-rw-rw-r-- 1 amin amin  313 nov.  27 11:59 main.c
+-rw-r--r-- 1 amin amin 5407 nov.  25 12:25 man_1_simple_shell
+-rw-r--r-- 1 amin amin  522 nov.  27 11:56 processing.c
+-rw-r--r-- 1 amin amin  237 nov.  25 13:05 purchar.c
+-rw-r--r-- 1 amin amin 5514 nov.  27 12:22 README.md
+-rw-r--r-- 1 amin amin 1247 nov.  27 11:56 steps.c
+$
 
 .BUGS
 
