@@ -78,4 +78,6 @@ No known bugs.
 khalil hassayoun and med amine bondi
 
 .project for :
- <img src="https://www.holbertonschool.com/holberton-logo.png"/>
+<br><br/>
+<img src="https://www.holbertonschool.com/holberton-logo.png"/>
+
