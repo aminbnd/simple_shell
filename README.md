@@ -1,3 +1,7 @@
+			simple shell : a linux shell clone
+
+				
+
 .\" Manpage for Simple Shell.
 . man 1 "nov 25 2020" "1.0" "Simple Shell Man Page"
 . NAME
@@ -72,3 +76,6 @@ No known bugs.
 .AUTHOR
 
 khalil hassayoun and med amine bondi
+
+.project for :
+ <img src="https://www.holbertonschool.com/holberton-logo.png"/>
