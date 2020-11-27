@@ -21,21 +21,22 @@ char *readline(void)
 	size_t size = 0;
 	int i;
 
-	if (getline(&line, &size, stdin) == EOF)
+	if (getline(&line, &size, stdin) != -1)
 	{
 		for (i = 0; line[i]; i++)
 		{
-			if (line[i] == -1)
+			if (line[0] == '\n')
 			{
-				exit(EXIT_SUCCESS); /* EOF received */
+				return (NULL);
 			}
-			else
-			{
-				perror("readline");
-				free(line);
-				exit(EXIT_FAILURE);
-			}
+			if (line[i] == '\n')
+				line[i] = '\0';
 		}
+	}
+	else
+	{
+		_putchar('\n');
+		exit(0);
 	}
 	/* line freed in the looper function */
 	return (line);
@@ -51,8 +52,8 @@ char **split_line(char *line)
 {
 	int bufsize = 1024;
 	int pos = 0;
-	char **tokens = malloc(bufsize * sizeof(char *));
 	char *token;
+	char **tokens = malloc(bufsize * sizeof(char *));
 
 	if (!tokens)
 	{

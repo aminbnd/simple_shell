@@ -15,7 +15,7 @@ int process(char **argv)
 	if (pid == -1)
 	{
 		perror("Error:");
-		exit(EXIT_FAILURE);
+		return (-1);
 	}
 
 	if (pid == 0) /* child process */
@@ -23,12 +23,13 @@ int process(char **argv)
 		if (execvp(argv[0], argv) == -1)
 		{
 			perror("Error:");
+			return (EXIT_FAILURE);
 		}
-		sleep(3);
+		return (EXIT_SUCCESS);
 	}
-	else
-	{
+	/*else*/
+	/*{*/
 		wait(&status);
-	}
+	/*}*/
 	return (1);
 }

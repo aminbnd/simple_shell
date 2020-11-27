@@ -7,15 +7,16 @@ int main(void)
 {
 	char *line;
 	char **args;
-	int status;
+	int statue = 1;
 
-	while (status)
+	while (statue)
 	{
 		prompt();
 		line = readline();
 		args = split_line(line);
-		status = process(args);
-
+		if (strcmp(line, "exit") == 0)
+			exit(0);
+		process(args);
 		free(line);
 		free(args);
 	}

@@ -18,7 +18,7 @@ char **split_line(char *line);
 int process(char **argv);
 int execute(char **argv);
 
-/**** marcros ****/
+/**** macros ****/
 #define DELIMITERS " \n\t\a\r"
 
 #endif
