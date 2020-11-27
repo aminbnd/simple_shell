@@ -1,4 +1,4 @@
-			<i><b>simple shell : a linux shell clone<b/><i/>
+			<i><b>simple shell : a linux shell clone</b></i>
 
 				
 
